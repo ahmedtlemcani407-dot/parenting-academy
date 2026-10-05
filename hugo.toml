@@ -1,0 +1,65 @@
+baseURL = 'https://parenting-academy.pages.dev/'
+locale = 'en-us'
+title = 'Parenting Academy'
+theme = 'PaperMod'
+
+enableRobotsTXT = true
+
+# RSS / feeds
+[outputs]
+home = ['HTML', 'RSS']
+
+# Taxonomies
+[taxonomies]
+category = 'categories'
+tag = 'tags'
+
+[params]
+description = 'Practical parenting advice from a real parent — bedtime, screen time, picky eaters, discipline, and all the everyday stuff nobody warns you about.'
+author = 'Parenting Academy'
+# Used in meta keywords (keep short)
+keywords = ['parenting', 'parenting advice', 'toddlers', 'kids', 'family']
+defaultTheme = 'auto'
+ShowReadingTime = true
+ShowWordCount = false
+ShowShareButtons = true
+ShowPostNavLinks = true
+ShowBreadCrumbs = true
+ShowCodeCopyButtons = false
+comments = false
+hideFooter = false
+# Show a short "home info" block on the homepage
+[params.homeInfoParams]
+Title = "Parenting Academy"
+Content = "Real-world parenting advice, written by a parent who's still figuring it out. Bedtime battles, screen time, picky eaters, the works — no judgment, no lectures."
+
+[[params.socialIcons]]
+name = "rss"
+url = "index.xml"
+
+[menu]
+[[menu.main]]
+identifier = "posts"
+name = "Posts"
+url = "/posts/"
+weight = 10
+[[menu.main]]
+identifier = "about"
+name = "About"
+url = "/about/"
+weight = 20
+[[menu.main]]
+identifier = "contact"
+name = "Contact"
+url = "/contact/"
+weight = 30
+[[menu.main]]
+identifier = "privacy"
+name = "Privacy"
+url = "/privacy/"
+weight = 40
+[[menu.main]]
+identifier = "terms"
+name = "Terms"
+url = "/terms/"
+weight = 50

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Parenting Academy</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on Parenting Academy</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 05 Oct 2026 09:00:00 +0100</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Getting Your Firstborn Ready for a New Sibling (What Worked, What Flopped)</title>
+      <link>http://localhost:1313/posts/preparing-for-new-sibling/</link>
+      <pubDate>Mon, 05 Oct 2026 09:00:00 +0100</pubDate>
+      <guid>http://localhost:1313/posts/preparing-for-new-sibling/</guid>
+      <description>We tried to prepare our 3-year-old for her baby brother. Some of it helped a lot, some of it backfired. The full honest rundown.</description>
+    </item>
+    <item>
+      <title>Positive Discipline, From a Parent Who Used to Yell</title>
+      <link>http://localhost:1313/posts/positive-discipline-basics/</link>
+      <pubDate>Sun, 04 Oct 2026 09:00:00 +0100</pubDate>
+      <guid>http://localhost:1313/posts/positive-discipline-basics/</guid>
+      <description>I was a yeller. Here is how I slowly switched to calmer, firmer discipline — the scripts that work, and what I do on the days I still lose it.</description>
+    </item>
+    <item>
+      <title>My Kid Ate Nothing But Beige Food for a Year. She&#39;s Fine.</title>
+      <link>http://localhost:1313/posts/picky-eaters/</link>
+      <pubDate>Sat, 03 Oct 2026 09:00:00 +0100</pubDate>
+      <guid>http://localhost:1313/posts/picky-eaters/</guid>
+      <description>Pasta, bread, crackers, repeat. What I learned about picky eating after a year of beige dinners — and the low-pressure tricks that slowly worked.</description>
+    </item>
+    <item>
+      <title>Screen Time Rules That Survived Contact With Our Actual Kids</title>
+      <link>http://localhost:1313/posts/managing-screen-time/</link>
+      <pubDate>Fri, 02 Oct 2026 09:00:00 +0100</pubDate>
+      <guid>http://localhost:1313/posts/managing-screen-time/</guid>
+      <description>I tried strict screen limits, screen-free weeks, all of it. Here is the imperfect system we landed on — and why the guilt spiral was the real problem.</description>
+    </item>
+    <item>
+      <title>About</title>
+      <link>http://localhost:1313/about/</link>
+      <pubDate>Thu, 01 Oct 2026 09:00:00 +0100</pubDate>
+      <guid>http://localhost:1313/about/</guid>
+      <description>Who writes Parenting Academy and why — a real parent sharing what actually worked, no expert credentials claimed.</description>
+    </item>
+    <item>
+      <title>Contact</title>
+      <link>http://localhost:1313/contact/</link>
+      <pubDate>Thu, 01 Oct 2026 09:00:00 +0100</pubDate>
+      <guid>http://localhost:1313/contact/</guid>
+      <description>How to get in touch with Parenting Academy.</description>
+    </item>
+    <item>
+      <title>Privacy Policy</title>
+      <link>http://localhost:1313/privacy/</link>
+      <pubDate>Thu, 01 Oct 2026 09:00:00 +0100</pubDate>
+      <guid>http://localhost:1313/privacy/</guid>
+      <description>How Parenting Academy collects, uses, and protects your information.</description>
+    </item>
+    <item>
+      <title>Terms and Disclaimer</title>
+      <link>http://localhost:1313/terms/</link>
+      <pubDate>Thu, 01 Oct 2026 09:00:00 +0100</pubDate>
+      <guid>http://localhost:1313/terms/</guid>
+      <description>Terms of use for Parenting Academy, including an important disclaimer about parenting advice.</description>
+    </item>
+    <item>
+      <title>What Finally Fixed Our Toddler Bedtime (It Wasn&#39;t a Fancy Routine)</title>
+      <link>http://localhost:1313/posts/bedtime-routines-for-toddlers/</link>
+      <pubDate>Thu, 01 Oct 2026 09:00:00 +0100</pubDate>
+      <guid>http://localhost:1313/posts/bedtime-routines-for-toddlers/</guid>
+      <description>Our toddler fought bedtime for months. Here is the simple routine that actually worked — and the mistake I kept making that kept it broken.</description>
+    </item>
+  </channel>
+</rss>

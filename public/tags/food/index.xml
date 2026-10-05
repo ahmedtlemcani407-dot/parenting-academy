@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Food on Parenting Academy</title>
+    <link>http://localhost:1313/tags/food/</link>
+    <description>Recent content in Food on Parenting Academy</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 03 Oct 2026 09:00:00 +0100</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/food/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>My Kid Ate Nothing But Beige Food for a Year. She&#39;s Fine.</title>
+      <link>http://localhost:1313/posts/picky-eaters/</link>
+      <pubDate>Sat, 03 Oct 2026 09:00:00 +0100</pubDate>
+      <guid>http://localhost:1313/posts/picky-eaters/</guid>
+      <description>Pasta, bread, crackers, repeat. What I learned about picky eating after a year of beige dinners — and the low-pressure tricks that slowly worked.</description>
+    </item>
+  </channel>
+</rss>
