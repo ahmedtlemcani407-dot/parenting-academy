@@ -9,7 +9,7 @@ I'd love to hear from you — questions, story ideas, or just to say hi.
 
 The best way to reach me is by email:
 
-**hello@example.com**
+**diothecreatore338@gmail.com**
 
 I read every message. I can't always reply right away (two kids, one blog, zero free evenings), but I do my best to get back within a week.
 
