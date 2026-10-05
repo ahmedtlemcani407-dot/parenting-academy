@@ -1,14 +1,14 @@
 <style>
   :root {
-    --bg: #f4f8f5;
-    --ink: #24312b;
-    --muted: #5d6c64;
-    --green: #3f6b55;
-    --line: #d9e3dc;
-    --butter: #fbe9b7;
-    --blush: #f9d9cf;
-    --sky: #d6e8ef;
-    --mint: #d8ecdf;
+    --bg: #fffdf8;
+    --ink: #1c2a23;
+    --muted: #55685e;
+    --green: #0f8a4d;
+    --line: #d5e7da;
+    --butter: #ffd166;
+    --blush: #ffab9e;
+    --sky: #9fd8ef;
+    --mint: #9fe6bb;
     --serif: "Fraunces", Georgia, "Times New Roman", serif;
     --sans: "Nunito Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
   }
@@ -32,9 +32,20 @@
     padding-top: 28px; padding-bottom: 28px;
   }
   .brand { font-family: var(--serif); font-weight: 700; font-size: 1.15rem; text-decoration: none; }
-  nav { display: flex; gap: 22px; font-size: 0.95rem; }
+  nav { display: flex; gap: 22px; font-size: 0.95rem; align-items: center; }
   nav a { text-decoration: none; color: var(--muted); }
   nav a:hover { color: var(--ink); text-decoration: underline; text-underline-offset: 4px; }
+
+  .theme-toggle {
+    background: none; border: 1px solid var(--line); border-radius: 999px;
+    width: 38px; height: 38px; display: inline-flex; align-items: center; justify-content: center;
+    cursor: pointer; color: var(--muted); padding: 0; flex: none;
+  }
+  .theme-toggle:hover { color: var(--ink); border-color: var(--green); }
+  .theme-toggle svg { width: 18px; height: 18px; }
+  .theme-toggle .icon-sun { display: none; }
+  [data-theme="dark"] .theme-toggle .icon-sun { display: block; }
+  [data-theme="dark"] .theme-toggle .icon-moon { display: none; }
 
   .hero { padding: 56px 0 40px; }
   h1 {
@@ -124,12 +135,14 @@
   .notfound h1 { margin-bottom: 12px; }
   .notfound p { color: var(--muted); }
 
-  @media (prefers-color-scheme: dark) {
-    :root {
-      --bg: #17201b; --ink: #e8eee9; --muted: #a6b5ab; --green: #8fc4a6; --line: #2b3a31;
-    }
-    .post a:hover { background: #1f2b24; }
-    .topics span, .note { color: #1d2822; }
-    .related-card { background: #1f2b24; }
+  [data-theme="dark"] {
+    --bg: #0e1512;
+    --ink: #eef4ef;
+    --muted: #a3b8ac;
+    --green: #63d99b;
+    --line: #22332a;
   }
+  [data-theme="dark"] .post a:hover { background: #16241c; }
+  [data-theme="dark"] .topics span, [data-theme="dark"] .note { color: #17211b; }
+  [data-theme="dark"] .related-card { background: #16241c; }
 </style>
