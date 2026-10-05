@@ -1,0 +1,25 @@
+{{- /* Related posts after the post body (posts section only). */ -}}
+{{- $tags := .Params.tags | default slice -}}
+{{- $related := slice -}}
+{{- range where (where site.RegularPages "Section" "posts") "Permalink" "!=" .Permalink -}}
+  {{- if gt (len (intersect $tags (.Params.tags | default slice))) 0 -}}
+    {{- $related = $related | append . -}}
+  {{- end -}}
+{{- end -}}
+{{- $related = first 3 $related -}}
+{{- if $related }}
+<section class="related" aria-label="Related posts">
+  <h2>Keep reading</h2>
+  <div class="related-grid">
+    {{- range $related }}
+    <a class="related-card" href="{{ .RelPermalink }}">
+      <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time>
+      <h3>{{ .Title }}</h3>
+      {{- with .Description }}
+      <p>{{ . | plainify | truncate 140 }}</p>
+      {{- end }}
+    </a>
+    {{- end }}
+  </div>
+</section>
+{{- end }}

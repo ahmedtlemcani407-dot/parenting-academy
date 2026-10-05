@@ -1,0 +1,13 @@
+{{- /* One post row (thumbnail, date, title, description). Expects a Page. */ -}}
+<li class="post">
+  <a href="{{ .RelPermalink }}">
+    {{ partial "post-thumb.html" . }}
+    <div>
+      <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time>
+      <h3>{{ .Title }}</h3>
+      {{- with .Description }}
+      <p>{{ . }}</p>
+      {{- end }}
+    </div>
+  </a>
+</li>

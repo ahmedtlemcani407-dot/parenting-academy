@@ -1,0 +1,9 @@
+{{- /* Post thumbnail: static/images/thumbs/<slug>.svg, falls back to default.svg */ -}}
+{{- $path := "images/thumbs/default.svg" -}}
+{{- with .File -}}
+  {{- $try := printf "images/thumbs/%s.svg" .ContentBaseName -}}
+  {{- if fileExists (printf "static/%s" $try) -}}
+    {{- $path = $try -}}
+  {{- end -}}
+{{- end -}}
+<img class="thumb" src="{{ $path | relURL }}" alt="" aria-hidden="true" width="96" height="96" loading="lazy">

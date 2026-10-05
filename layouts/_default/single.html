@@ -1,0 +1,19 @@
+{{ define "main" }}
+<article class="wrap">
+  <header class="article-head">
+    <h1>{{ .Title }}</h1>
+    {{- if eq .Section "posts" }}
+    <p class="article-meta">
+      <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time>
+      · {{ .ReadingTime }} min read
+    </p>
+    {{- end }}
+  </header>
+  <div class="article-body">
+    {{ .Content }}
+  </div>
+  {{- if eq .Section "posts" }}
+  {{ partial "related.html" . }}
+  {{- end }}
+</article>
+{{ end }}

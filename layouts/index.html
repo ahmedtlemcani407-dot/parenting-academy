@@ -1,0 +1,29 @@
+{{ define "main" }}
+<section class="hero">
+  <div class="wrap">
+    <h1>Parenting advice from someone who’s still figuring it out.</h1>
+    <p>Bedtime battles, screen time, picky eaters, and all the everyday stuff nobody warns you about. I write about what worked in our house, and what flopped.</p>
+    <p class="sig">No judgment. No lectures.</p>
+    <div class="topics" aria-label="Topics">
+      <span>Bedtime</span><span>Screen time</span><span>Picky eaters</span><span>Discipline</span>
+    </div>
+    {{ partial "hero-banner.html" . }}
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Latest from the kitchen table</h2>
+    <ul class="posts">
+      {{- range first 5 (where site.RegularPages "Section" "posts") }}
+      {{ partial "post-row.html" . }}
+      {{- end }}
+    </ul>
+
+    <div class="note">
+      <p>Got a bedtime story, a meltdown, or a question you’re embarrassed to ask? You’re in good company.</p>
+      <p><a href="{{ "contact/" | relURL }}">Send me a note</a></p>
+    </div>
+  </div>
+</section>
+{{ end }}

@@ -1,0 +1,17 @@
+{{ define "main" }}
+<section>
+  <div class="wrap">
+    <header class="page-head">
+      <h1>{{ .Title }}</h1>
+      {{- with .Description }}<p style="color: var(--muted);">{{ . }}</p>{{ end }}
+    </header>
+    <ul class="posts">
+      {{- range .Pages.ByDate.Reverse }}
+      {{- if .IsPage }}
+      {{ partial "post-row.html" . }}
+      {{- end }}
+      {{- end }}
+    </ul>
+  </div>
+</section>
+{{ end }}

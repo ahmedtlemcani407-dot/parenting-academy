@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="{{ site.Language.Locale | default "en-us" }}">
+<head>
+{{ partial "head.html" . }}
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a class="brand" href="{{ "/" | relURL }}">{{ site.Title }}</a>
+    <nav aria-label="Main">
+      {{- range site.Menus.main }}
+      <a href="{{ .URL | relURL }}">{{ .Name }}</a>
+      {{- end }}
+    </nav>
+  </div>
+</header>
+
+<main>
+{{ block "main" . }}{{ end }}
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© {{ now.Format "2006" }} {{ site.Title }}</span>
+    <nav aria-label="Footer">
+      {{- range site.Menus.footer }}
+      <a href="{{ .URL | relURL }}">{{ .Name }}</a>
+      {{- end }}
+      <a href="{{ "index.xml" | relURL }}">RSS</a>
+    </nav>
+  </div>
+</footer>
+
+</body>
+</html>
