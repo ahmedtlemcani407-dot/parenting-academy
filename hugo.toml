@@ -19,6 +19,17 @@ description = 'Practical parenting advice from a real parent — bedtime, screen
 author = 'Parenting Academy'
 # Used in meta keywords (keep short)
 keywords = ['parenting', 'parenting advice', 'toddlers', 'kids', 'family']
+# Default social share image (og:image / twitter:image) for all pages
+images = ['images/og-card.png']
+# Header logo (SVG in static/) and favicons
+[params.label]
+icon = 'images/logo.svg'
+iconHeight = 32
+[params.assets]
+favicon = 'images/logo.svg'
+favicon16x16 = 'favicon-16x16.png'
+favicon32x32 = 'favicon-32x32.png'
+theme_color = '#c2703d'
 defaultTheme = 'auto'
 ShowReadingTime = true
 ShowWordCount = false

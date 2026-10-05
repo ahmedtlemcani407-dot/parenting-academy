@@ -1,0 +1,16 @@
+# Cloudflare Pages header rules — copied to the site root on deploy.
+# More specific paths override same-name headers from /* (Cloudflare merges).
+
+/*
+  X-Frame-Options: SAMEORIGIN
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=(), usb=(), interest-cohort=()
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'self'
+
+# The /admin editor loads Sveltia CMS from unpkg.com and talks to api.github.com,
+# so it needs a looser CSP. ('unsafe-inline' on script-src here is required by
+# PaperMod's own inline theme scripts on the main site; the admin page itself
+# ships no inline scripts.)
+/admin/*
+  Content-Security-Policy: default-src 'self'; script-src 'self' https://unpkg.com; style-src 'self' 'unsafe-inline' https://unpkg.com; img-src 'self' data:; connect-src 'self' https://api.github.com; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'self'

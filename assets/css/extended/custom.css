@@ -1,0 +1,67 @@
+/* Parenting Academy — warm accent polish (loaded via PaperMod's extended CSS bundle) */
+
+:root {
+  --pa-accent: #c2703d;
+  --pa-accent-dark: #a55a2c;
+  --pa-warm-bg: #fdf6ec;
+}
+
+/* Warm text selection */
+::selection {
+  background: rgba(194, 112, 61, 0.25);
+}
+
+/* Gentle accent on post body links */
+.post-content a {
+  color: var(--pa-accent-dark);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+}
+.post-content a:hover {
+  color: var(--pa-accent);
+}
+
+/* Header logo image sits nicely next to the site name */
+.logo img {
+  border-radius: 6px;
+  vertical-align: -8px;
+  margin-right: 6px;
+}
+
+/* Related posts */
+.related-posts {
+  margin: 3rem 0 1rem;
+}
+.related-title {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+.related-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+.related-card {
+  display: block;
+  padding: 1rem 1.1rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius, 8px);
+  background: var(--entry);
+  transition: border-color 0.2s ease, transform 0.2s ease;
+}
+.related-card:hover {
+  border-color: var(--pa-accent);
+  transform: translateY(-2px);
+}
+.related-card h3 {
+  font-size: 1rem;
+  line-height: 1.4;
+  margin: 0 0 0.5rem;
+  color: var(--primary);
+}
+.related-card p {
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin: 0;
+  color: var(--secondary);
+}
