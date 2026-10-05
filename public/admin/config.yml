@@ -2,11 +2,11 @@
 # NOTE: replace `repo` with the real GitHub repo (owner/name) once created.
 backend:
   name: github
-  repo: OWNER/parenting-academy
+  repo: ahmedtlemcani407-dot/parenting-academy
   branch: main
 
-site_url: https://example.pages.dev/
-display_url: https://example.pages.dev/
+site_url: https://parenting-academy.pages.dev/
+display_url: https://parenting-academy.pages.dev/
 logo_url: /favicon.ico
 
 media_folder: static/images/uploads

@@ -3,7 +3,7 @@
 backend:
   name: github
   repo: ahmedtlemcani407-dot/parenting-academy
-  branch: main
+  branch: master
 
 site_url: https://parenting-academy.pages.dev/
 display_url: https://parenting-academy.pages.dev/
