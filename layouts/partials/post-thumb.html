@@ -1,9 +1,12 @@
-{{- /* Post thumbnail: static/images/thumbs/<slug>.svg, falls back to default.svg */ -}}
+{{- /* Post thumbnail: static/images/thumbs/<slug>.jpg, then <slug>.svg, then default.svg */ -}}
 {{- $path := "images/thumbs/default.svg" -}}
 {{- with .File -}}
-  {{- $try := printf "images/thumbs/%s.svg" .ContentBaseName -}}
-  {{- if fileExists (printf "static/%s" $try) -}}
-    {{- $path = $try -}}
+  {{- $jpg := printf "images/thumbs/%s.jpg" .ContentBaseName -}}
+  {{- $svg := printf "images/thumbs/%s.svg" .ContentBaseName -}}
+  {{- if fileExists (printf "static/%s" $jpg) -}}
+    {{- $path = $jpg -}}
+  {{- else if fileExists (printf "static/%s" $svg) -}}
+    {{- $path = $svg -}}
   {{- end -}}
 {{- end -}}
-<img class="thumb" src="{{ $path | relURL }}" alt="" aria-hidden="true" width="96" height="96" loading="lazy">
+<img class="thumb" src="{{ $path | relURL }}" alt="" aria-hidden="true" loading="lazy">
