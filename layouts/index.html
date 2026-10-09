@@ -1,29 +1,129 @@
 {{ define "main" }}
-<section class="hero">
+{{ $posts := where site.RegularPages "Section" "posts" }}
+{{ $lead := index $posts 0 }}
+{{ $rest := after 1 $posts }}
+
+<div class="ribbon">
+  <div class="wrap ribbon-wrap">
+    <span>{{ now.Format "January 2006" }} · Real parenting from the kitchen table</span>
+    <span>{{ len $posts }} stories</span>
+  </div>
+</div>
+
+{{ with $lead }}
+<section class="lead-story" id="featured">
   <div class="wrap">
-    <h1>Parenting advice from someone who’s still figuring it out.</h1>
-    <p>Bedtime battles, screen time, picky eaters, and all the everyday stuff nobody warns you about. I write about what worked in our house, and what flopped.</p>
-    <p class="sig">No judgment. No lectures.</p>
-    <div class="topics" aria-label="Topics">
-      <span>Bedtime</span><span>Screen time</span><span>Picky eaters</span><span>Discipline</span>
+    <div class="lead-grid">
+      <div class="lead-img-box">
+        <a href="{{ .RelPermalink }}" aria-label="{{ .Title }}">{{ partial "post-thumb.html" . }}</a>
+      </div>
+      <div>
+        <div class="meta-line">
+          {{ with index .Params.tags 0 }}<span class="meta-cat">{{ . | humanize | title }}</span><span aria-hidden="true">·</span>{{ end }}
+          <span>{{ .ReadingTime }} min read</span><span aria-hidden="true">·</span>
+          <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time>
+        </div>
+        <h1 class="lead-title">{{ .Title }}</h1>
+        {{ with .Description }}<p class="lead-excerpt">{{ . }}</p>{{ end }}
+        <a class="btn-read" href="{{ .RelPermalink }}">Read the story →</a>
+      </div>
     </div>
-    {{ partial "hero-banner.html" . }}
+  </div>
+</section>
+{{ end }}
+
+<section id="values" aria-label="Our promise">
+  <div class="wrap">
+    <div class="credo-strip">
+      <span class="credo-kicker">The Kitchen Table Promise</span>
+      <h2>Parenting advice from someone who’s still figuring it out.</h2>
+      <p>Bedtime battles, screen time, picky eaters, and all the everyday stuff nobody warns you about. I write about what worked in our house, and what flopped.</p>
+      <div class="credo-items">
+        <span>✓ No judgment</span>
+        <span>✓ No lectures</span>
+        <span>✓ Kids are people, not projects</span>
+      </div>
+    </div>
   </div>
 </section>
 
-<section>
+<section aria-label="Latest posts">
   <div class="wrap">
-    <h2>Latest from the kitchen table</h2>
-    <ul class="posts">
-      {{- range first 5 (where site.RegularPages "Section" "posts") }}
-      {{ partial "post-row.html" . }}
-      {{- end }}
-    </ul>
-
-    <div class="note">
-      <p>Got a bedtime story, a meltdown, or a question you’re embarrassed to ask? You’re in good company.</p>
-      <p><a href="{{ "contact/" | relURL }}">Send me a note</a></p>
+    <div class="section-head">
+      <h2>Latest dispatches</h2>
+      <span>Field-tested with actual kids</span>
+    </div>
+    <div class="magazine-grid">
+      {{ range $rest }}
+      <article class="mag-card">
+        <a href="{{ .RelPermalink }}" aria-label="{{ .Title }}">
+          <div class="card-img-box">{{ partial "post-thumb.html" . }}</div>
+          <div class="meta-line">
+            {{ with index .Params.tags 0 }}<span class="meta-cat">{{ . | humanize | title }}</span><span aria-hidden="true">·</span>{{ end }}
+            <span>{{ .ReadingTime }} min read</span>
+          </div>
+          <h3>{{ .Title }}</h3>
+          {{ with .Description }}<p>{{ . }}</p>{{ end }}
+        </a>
+      </article>
+      {{ end }}
     </div>
   </div>
 </section>
+
+<section id="toolkit" aria-label="Bedtime routine chart">
+  <div class="wrap">
+    <div class="toolkit-box">
+      <div class="toolkit-box-head">
+        <div>
+          <span class="toolkit-kicker">Interactive parent toolkit</span>
+          <h2>Bedtime Routine Chart</h2>
+          <p>Click to check off tonight's steps, or print it for your fridge. <a href="{{ "posts/printable-bedtime-routine-chart/" | relURL }}">Get the free PDF →</a></p>
+        </div>
+        <button class="btn-print" type="button" onclick="window.print()">🖨️ Print chart</button>
+      </div>
+      <div class="chart-items" id="chart-list">
+        <div class="chart-item" onclick="toggleCheck(this)" role="checkbox" aria-checked="false" tabindex="0">
+          <div class="chart-text"><strong>1. 🧸 Tidy up toys</strong> — Blocks in the basket</div><span aria-hidden="true">⬜</span>
+        </div>
+        <div class="chart-item" onclick="toggleCheck(this)" role="checkbox" aria-checked="false" tabindex="0">
+          <div class="chart-text"><strong>2. 🛁 Warm bath</strong> — Splash, then a cozy towel</div><span aria-hidden="true">⬜</span>
+        </div>
+        <div class="chart-item" onclick="toggleCheck(this)" role="checkbox" aria-checked="false" tabindex="0">
+          <div class="chart-text"><strong>3. 🪥 Brush teeth</strong> — Two minutes, top and bottom</div><span aria-hidden="true">⬜</span>
+        </div>
+        <div class="chart-item" onclick="toggleCheck(this)" role="checkbox" aria-checked="false" tabindex="0">
+          <div class="chart-text"><strong>4. 👕 Pyjamas on</strong> — Pick the comfy ones</div><span aria-hidden="true">⬜</span>
+        </div>
+        <div class="chart-item" onclick="toggleCheck(this)" role="checkbox" aria-checked="false" tabindex="0">
+          <div class="chart-text"><strong>5. 📖 Bedtime story</strong> — Two books, kid's choice</div><span aria-hidden="true">⬜</span>
+        </div>
+        <div class="chart-item" onclick="toggleCheck(this)" role="checkbox" aria-checked="false" tabindex="0">
+          <div class="chart-text"><strong>6. 🤗 Hugs &amp; goodnight</strong> — One song, then lights low</div><span aria-hidden="true">⬜</span>
+        </div>
+        <div class="chart-item" onclick="toggleCheck(this)" role="checkbox" aria-checked="false" tabindex="0">
+          <div class="chart-text"><strong>7. 🌙 Lights out</strong> — Sleep tight till morning</div><span aria-hidden="true">⬜</span>
+        </div>
+      </div>
+      <div class="chart-foot">
+        <span>Tonight's reward: hand over the crayon to color in stars!</span>
+        <span aria-hidden="true">⭐⭐⭐⭐⭐</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+function toggleCheck(el) {
+  var on = el.classList.toggle('checked');
+  el.setAttribute('aria-checked', on ? 'true' : 'false');
+  el.querySelector('span[aria-hidden]').textContent = on ? '✅' : '⬜';
+}
+document.getElementById('chart-list').addEventListener('keydown', function (e) {
+  if ((e.key === ' ' || e.key === 'Enter') && e.target.classList.contains('chart-item')) {
+    e.preventDefault();
+    toggleCheck(e.target);
+  }
+});
+</script>
 {{ end }}
