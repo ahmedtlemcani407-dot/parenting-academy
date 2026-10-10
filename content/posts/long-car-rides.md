@@ -1,9 +1,9 @@
 +++
 title = "Our Long Car Ride Survival Kit (Tested on a 6-Hour Drive)"
-date = 2026-10-10T10:00:00+01:00
+date = 2026-10-09T10:00:00+01:00
 description = "Six hours in the car with a 4-year-old and a 2-year-old. What actually kept them happy, what we packed for nothing, and the backseat rules that saved us."
 tags = ['car rides', 'travel', 'toddlers']
-draft = true
+draft = false
 +++
 
 We drove six hours to my in-laws last month. Two kids in the back: a 4-year-old and a 2-year-old. I packed the car the night before like I was preparing for an expedition, and honestly half of it was useless.

@@ -3,7 +3,7 @@ title = "The Daycare Drop-Off Cry Nearly Broke Me (Then I Fixed the Goodbye)"
 date = 2026-10-06T10:00:00+01:00
 description = 'My daughter screamed every morning at daycare drop-off for weeks. The fix was not what the parenting books said — it was making the goodbye shorter and boring.'
 tags = ['daycare', 'separation anxiety', 'toddlers']
-draft = true
+draft = false
 +++
 
 For the first three weeks of daycare, my daughter cried at drop-off. Not a whimper. The full thing — clinging to my leg, tears, the small devastated face pressed against the window as I walked to the car. I sat in the parking lot and cried too, twice. I was convinced I had made a terrible mistake and possibly ruined her for life.

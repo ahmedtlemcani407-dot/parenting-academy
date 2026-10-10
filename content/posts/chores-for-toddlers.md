@@ -1,9 +1,9 @@
 +++
 title = "My Toddler Has Chores and It's Not What You Think"
-date = 2026-10-10T11:00:00+01:00
+date = 2026-10-09T11:00:00+01:00
 description = "My three-year-old has exactly two jobs: socks in the basket and wiping the table. The pride on her face is the whole point."
 tags = ['toddlers', 'chores', 'independence']
-draft = true
+draft = false
 +++
 
 When I tell people my three-year-old has chores, they picture something out of a Victorian novel. She does not scrub floors. She has exactly two jobs, and both of them take about ninety seconds.

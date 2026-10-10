@@ -1,9 +1,9 @@
 +++
 title = "10 Rainy-Day Activities That Actually Entertained My Toddler"
-date = 2026-10-10T12:00:00+01:00
+date = 2026-10-09T12:00:00+01:00
 description = "Tested on real rainy Saturdays with my 3-year-old: fort building, tape roads, sink play — plus the three ideas that flopped completely."
 tags = ['activities', 'toddlers', 'indoor play']
-draft = true
+draft = false
 +++
 
 It rained for nine straight days last month. Nine. By day four my daughter was climbing the walls — literally, she tried to climb the hallway wall — and I was one more episode of the same cartoon away from losing it. So we tested everything. Here's what actually worked, ranked by how long it bought me.

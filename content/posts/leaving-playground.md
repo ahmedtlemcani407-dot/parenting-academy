@@ -1,9 +1,9 @@
 +++
 title = "Leaving the Playground Without a Meltdown (Usually)"
-date = 2026-10-10T11:00:00+01:00
+date = 2026-10-09T11:00:00+01:00
 description = "For six months I carried my screaming daughter out of the playground like a rolled-up carpet. Here's what finally made leaving bearable."
 tags = ['toddlers', 'playground', 'tantrums']
-draft = true
+draft = false
 +++
 
 For about six months, every playground visit ended the same way: me carrying my daughter out under my arm like a rolled-up carpet while she screamed "NO! TWO MORE!" at a volume that made a pigeon fall off the fence. Real pigeon. It startled, flapped, came back.

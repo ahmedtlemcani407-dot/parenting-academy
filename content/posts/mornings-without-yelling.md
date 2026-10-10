@@ -3,7 +3,7 @@ title = "I Stopped Yelling to Get Us Out the Door in the Mornings"
 date = 2026-10-06T09:00:00+01:00
 description = 'Our mornings used to be a 40-minute shouting match over shoes. Here is the unglamorous system that fixed it — no 5am wake-ups required.'
 tags = ['morning routine', 'toddlers', 'school run']
-draft = true
+draft = false
 +++
 
 For about six months, our mornings went like this: I'd wake my daughter up, and by the time we left the house I had said "PUT YOUR SHOES ON" roughly fourteen times, at increasing volume, while she did everything except put her shoes on. We left the house angry. Every day. She'd cry at drop-off, I'd feel like garbage all the way to work, and then we'd do it again tomorrow.

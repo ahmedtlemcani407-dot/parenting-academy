@@ -3,7 +3,7 @@ title = "Her Lunchbox Came Home Full Every Day. Lunch Was the Wrong Battle."
 date = 2026-10-07T10:00:00+01:00
 description = 'She ate fine at home but her lunchbox came back untouched every day. A pediatric OT helped me stop fighting lunch and start fixing the parts that were actually broken.'
 tags = ['picky eaters', 'food', 'school']
-draft = true
+draft = false
 +++
 
 For a few months, my daughter's lunchbox came home basically untouched. The sandwich with one bite taken out of it. The fruit cup still sealed. I'd open it at 3pm and feel like I'd failed some test nobody told me I was taking.

@@ -1,9 +1,9 @@
 +++
 title = "I Stopped Forcing My Toddler to Share"
-date = 2026-10-10T09:00:00+01:00
+date = 2026-10-09T09:00:00+01:00
 description = "Forcing my toddler to hand over her shovel bought twenty minutes of screaming for forty seconds of sharing. The timer and the sacred comfort toy work better."
 tags = ['sharing', 'toddlers', 'playdates']
-draft = true
+draft = false
 +++
 
 Last spring at the playground, my daughter was digging a very serious hole with her yellow shovel when a confident four-year-old walked up, took it straight out of her hands, and kept walking. My daughter froze for a second, then screamed like she'd been robbed. Which, from where she was standing, she had been.

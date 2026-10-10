@@ -1,9 +1,9 @@
 +++
 title = "The Nap Is Gone and Nobody Is Okay"
-date = 2026-10-10T10:00:00+01:00
+date = 2026-10-09T10:00:00+01:00
 description = "The nap vanished at 3 and left 5pm meltdowns behind. Quiet time and an earlier bedtime are what's keeping our family functional."
 tags = ['sleep', 'naps', 'toddlers', 'bedtime']
-draft = true
+draft = false
 +++
 
 The nap died on a random Tuesday. My daughter was 3, and for a week straight she'd lie in her bed singing to herself for an hour — full concerts, I could hear her through the door doing all the verses of songs I didn't know she knew — and then pop up cheerful and completely un-rested. The nap was over. I just didn't want to admit it yet.

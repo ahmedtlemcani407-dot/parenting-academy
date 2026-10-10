@@ -3,7 +3,7 @@ title = "Potty Training Is Not a Milestone. It's a Negotiation With a Tiny Terro
 date = 2026-10-06T13:45:00+01:00
 description = 'We tried the three-day method, the sticker chart, the peer pressure. What finally worked was stopping all of it. An honest account of potty training a stubborn toddler.'
 tags = ['potty training', 'toddlers', 'milestones']
-draft = true
+draft = false
 +++
 
 Our daughter was two years and four months old, and according to every parenting book, article, and well-meaning stranger, she was "ready." She was not ready. She looked the potty in the eye and chose the diaper every single time, with the confidence of a person who had weighed both options carefully.

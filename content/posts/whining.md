@@ -1,9 +1,9 @@
 +++
 title = "The Whining Phase Nearly Broke Me"
-date = 2026-10-10T09:00:00+01:00
+date = 2026-10-09T09:00:00+01:00
 description = "The 6pm whine drilled into my skull for months. Ignoring it backfired, caving trained it — naming the feeling plus one calm redo finally turned it down."
 tags = ['whining', 'toddlers', 'behavior']
-draft = true
+draft = false
 +++
 
 It started when she was about three and a half. That voice. You know the one — it comes out of nowhere around 6pm, right when I'm trying to get dinner on the table, and it drills directly into the center of my skull.

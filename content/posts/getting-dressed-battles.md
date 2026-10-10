@@ -1,9 +1,9 @@
 +++
 title = "Getting My Toddler Dressed Used to Take 25 Minutes"
-date = 2026-10-10T09:00:00+01:00
+date = 2026-10-09T09:00:00+01:00
 description = "Twenty-five minutes to put on a t-shirt and leggings. Bribery flopped, night-before picks got rejected — two real choices and sock puppets saved us."
 tags = ['mornings', 'toddlers', 'getting dressed']
-draft = true
+draft = false
 +++
 
 I timed it once, out of morbid curiosity. Twenty-five minutes. Twenty-five minutes to get a three-year-old into a t-shirt, leggings, and socks. The actual physical act of dressing takes maybe ninety seconds. The other twenty-three and a half were negotiation, chasing, and one incident where she hid under the dining table wearing nothing but one sock.

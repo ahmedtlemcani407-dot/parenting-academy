@@ -1,9 +1,9 @@
 +++
 title = "The Parent Guilt Never Fully Leaves"
-date = 2026-10-10T12:00:00+01:00
+date = 2026-10-09T12:00:00+01:00
 description = "I missed bedtime three nights in a row and the guilt nearly ate me. Overcompensating with toys flopped — here's what actually quieted it."
 tags = ['guilt', 'working parents', 'bedtime']
-draft = true
+draft = false
 +++
 
 Three Tuesdays ago I got home at 8:40pm. My daughter's bedtime is 7:30. I stood in the hallway listening to the quiet — that specific quiet of a house where the small person is already asleep — and I felt like I'd been punched. Three nights in a row. Meetings that ran long, a train that didn't come, the usual grown-up excuses that mean nothing to a four-year-old.

@@ -1,9 +1,9 @@
 +++
 title = "Bathtime Went From Favorite to Screaming in a Week"
-date = 2026-10-10T11:00:00+01:00
+date = 2026-10-09T11:00:00+01:00
 description = "She loved baths for two years, then suddenly screamed at the sight of the tub. New toys, pouring games, and not forcing it brought it back."
 tags = ['toddlers', 'bathtime', 'fears']
-draft = true
+draft = false
 +++
 
 For two years, bathtime was the best part of the day. My daughter would sit in the tub for forty minutes, pouring water from cup to cup, narrating the adventures of a rubber duck with the intensity of a sports commentator. Then one week, out of nowhere, she took one look at the running bath and screamed like the tub was full of spiders.

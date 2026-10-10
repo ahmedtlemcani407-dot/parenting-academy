@@ -1,9 +1,9 @@
 +++
 title = "My Toddler Hit Other Kids. Here's What Stopped It"
-date = 2026-10-10T10:00:00+01:00
+date = 2026-10-09T10:00:00+01:00
 description = "My 2-year-old started smacking kids at the playground and I wanted to sink into the ground. The calm, firm approach that actually stopped it."
 tags = ['hitting', 'toddlers', 'behavior']
-draft = true
+draft = false
 +++
 
 My 2-year-old hit another kid at the playground, and I wanted the ground to swallow me. It was a Tuesday morning, the playground was full, and she walked up to a little boy, took his shovel, and when he grabbed it back she smacked him right on the arm. He cried. His mom stared at me. I apologized about nine times and left with my face burning.

@@ -3,7 +3,7 @@ title = "The Grocery Store Meltdown: What I Do Now (and What I Stopped Doing)"
 date = 2026-10-06T13:30:00+01:00
 description = 'Public tantrums are the worst parenting stress test. I used to negotiate, threaten, and perform for the audience. Here is the boring routine that actually works now.'
 tags = ['tantrums', 'toddlers', 'public parenting']
-draft = true
+draft = false
 +++
 
 My son was three when he staged his legendary meltdown in the cereal aisle. He wanted the box with the cartoon tiger. I said no. He went full rag-doll — flat on the floor, screaming, the kind of screaming that makes other shoppers' carts swerve into the next aisle. A woman stopped and stared at me. I could feel the heat climbing up my neck, and every parenting instinct I had said the same thing: *fix this immediately, whatever it takes.*

@@ -1,9 +1,9 @@
 +++
 title = "My 4-Year-Old Lies to My Face Now"
-date = 2026-10-10T12:00:00+01:00
+date = 2026-10-09T12:00:00+01:00
 description = "My daughter started lying about everything from cookies to crayons on the wall. The interrogation approach flopped — here's what actually made truth-telling safe."
 tags = ['lying', 'preschoolers', 'behavior']
-draft = true
+draft = false
 +++
 
 The first time my daughter lied to me, it was about the cookies. She was four, chocolate on her chin, crumbs down her shirt, and when I asked "did you take a cookie?" she looked me dead in the eye and said "no."

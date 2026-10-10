@@ -1,9 +1,9 @@
 +++
 title = "My Kids Fight 40 Times a Day"
-date = 2026-10-10T10:00:00+01:00
+date = 2026-10-09T10:00:00+01:00
 description = "My 4-year-old and 2-year-old fight over everything, including air. What's normal, when I step in, and the one rule that cut the battles in half."
 tags = ['siblings', 'fighting', 'toddlers']
-draft = true
+draft = false
 +++
 
 My kids fight about forty times a day. I'm not exaggerating much. They're 4 and 2, and they will fight over the red cup, the blue cup, the same crayon when there are nineteen others, who gets to push the elevator button, and once — I swear this happened — over who got to be sad first.

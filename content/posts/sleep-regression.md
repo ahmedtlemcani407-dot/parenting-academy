@@ -1,9 +1,9 @@
 +++
 title = "Sleep Regressions Are Real and I Hate Them"
-date = 2026-10-10T11:00:00+01:00
+date = 2026-10-09T11:00:00+01:00
 description = "The two-year sleep regression wrecked us for three weeks. What got us through wasn't a trick — it was lowering the bar everywhere else."
 tags = ['toddlers', 'sleep', 'regression']
-draft = true
+draft = false
 +++
 
 I used to think sleep regressions were something sleep consultants invented to sell courses. Then my daughter turned two and, overnight, decided that sleep was a scam she was no longer participating in.

@@ -1,9 +1,9 @@
 +++
 title = "Grandma Undoes All My Rules in One Afternoon"
-date = 2026-10-10T11:00:00+01:00
+date = 2026-10-09T11:00:00+01:00
 description = "One visit from grandma: three biscuits before lunch, bedtime at nine. I stopped fighting it and had the honest talk instead."
 tags = ['grandparents', 'boundaries', 'family']
-draft = true
+draft = false
 +++
 
 My mother visits for one afternoon and undoes approximately eleven months of careful parenting. Last time: three biscuits before lunch ("she looked hungry"), a juice box I have never purchased in my life, and bedtime at nine-fifteen because "she wasn't tired." She was tired. She fell asleep mid-sentence during the bedtime story, which my mother took as evidence that the story was boring.

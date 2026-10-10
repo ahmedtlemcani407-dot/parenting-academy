@@ -3,7 +3,7 @@ title = "Brushing a Toddler's Teeth Without the Nightly Wrestling Match"
 date = 2026-10-06T11:00:00+01:00
 description = 'Toothbrushing used to end with one of us crying (me, once). Two toothbrushes and a terrible song fixed it.'
 tags = ['toddlers', 'health', 'bedtime']
-draft = true
+draft = false
 +++
 
 Toothbrushing in our house used to be a two-person wrestling event. I'd pin my daughter's arms with one hand and jab at her molars with the other while she clamped her mouth shut like a tiny vault. It ended most nights with both of us upset, and once — I'm not proud — I cried. Over toothbrushing. The dentist had said "just make sure you get the back teeth" and I had taken that as a personal mission with military enforcement.

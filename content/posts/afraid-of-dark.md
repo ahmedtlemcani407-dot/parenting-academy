@@ -1,9 +1,9 @@
 +++
 title = "My Toddler Is Suddenly Afraid of the Dark"
-date = 2026-10-10T10:00:00+01:00
+date = 2026-10-09T10:00:00+01:00
 description = "At 3, my daughter suddenly decided the dark was full of monsters. The nightlight, the room check, and the silly spray that fixed bedtime."
 tags = ['sleep', 'fear', 'toddlers', 'bedtime']
-draft = true
+draft = false
 +++
 
 My daughter was fine with the dark for three years. Then one night, out of nowhere, she stood in her bedroom doorway in her pajamas and announced "there's a monster in my closet," and bedtime has never been the same since.

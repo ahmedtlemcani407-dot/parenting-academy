@@ -1,9 +1,9 @@
 +++
 title = "I Compared My Kid to Other Kids. I Had to Stop"
-date = 2026-10-10T12:00:00+01:00
+date = 2026-10-09T12:00:00+01:00
 description = "The playground comparison trap nearly broke me — someone else's kid counting to fifty while mine ate sand. What I tell myself now when the spiral starts."
 tags = ['comparison', 'milestones', 'anxiety']
-draft = true
+draft = false
 +++
 
 It happened at the playground behind our building. My daughter was three and a half, sitting in the sandbox eating sand like it was a job, while a boy maybe six months younger than her counted to fifty on the swings. Fifty. His mom smiled at me, the proud tired smile, and said "he just picked it up!"

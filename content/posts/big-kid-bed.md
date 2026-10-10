@@ -1,9 +1,9 @@
 +++
 title = "We Moved Her to a Big Kid Bed and It Was Chaos (Then Fine)"
-date = 2026-10-10T12:00:00+01:00
+date = 2026-10-09T12:00:00+01:00
 description = "The first week of midnight wanderings nearly broke us. What helped: the okay-to-wake clock, and a humbling mattress-on-the-floor phase."
 tags = ['sleep', 'big kid bed', 'toddlers']
-draft = true
+draft = false
 +++
 
 We moved our daughter to a big kid bed the weekend she turned three, because she'd started climbing out of the crib like a tiny escape artist and I was terrified she'd break her neck at 2am. The crib had kept her in. The bed, it turned out, kept nothing in.

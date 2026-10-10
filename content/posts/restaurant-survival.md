@@ -1,9 +1,9 @@
 +++
 title = "How We Survive Restaurants With a Toddler (Mostly)"
-date = 2026-10-10T09:00:00+01:00
+date = 2026-10-09T09:00:00+01:00
 description = "The tote bag that lives in our car, why we eat at 5:30, and the anniversary dinner that taught us to just leave when it's not working."
 tags = ['restaurants', 'toddlers', 'eating out']
-draft = true
+draft = false
 +++
 
 We have a restaurant kit. It lives in the car, in a tote bag, and it has saved more meals than I can count. A spill-proof snack cup of oat crackers. A reusable sticker book. One of those water-reveal coloring pads and the chunky pen that goes with it. Wet wipes — so many wet wipes. A spare spoon, because the restaurant will bring one eventually, but "eventually" is a long time when you're three. And one small new thing from the euro shop, still in its packaging, for emergencies. Last month the emergency thing was a tiny dinosaur. Money well spent.

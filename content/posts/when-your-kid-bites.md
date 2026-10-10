@@ -3,7 +3,7 @@ title = "My Kid Bit Another Kid at the Playground. The Shame Was the Worst Part.
 date = 2026-10-06T09:30:00+01:00
 description = 'The bite, the other parent\u2019s face, and what I learned about handling it without the public shaming ritual. Practical, and kinder than the parenting forums.'
 tags = ['biting', 'toddlers', 'behavior']
-draft = true
+draft = false
 +++
 
 It happened fast. My daughter was two and a half, we were at the playground, and another kid picked up the shovel she had decided was hers. Before I could move, she'd sunk her teeth into his arm. He screamed. The other mother turned around. And in that moment, I would have traded places with anyone on earth.

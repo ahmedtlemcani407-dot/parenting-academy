@@ -1,9 +1,9 @@
 +++
 title = "The Bedtime Stall: 47 Excuses, One Thing That Worked"
-date = 2026-10-10T09:00:00+01:00
+date = 2026-10-09T09:00:00+01:00
 description = "Nine trips out of bed in one night — water, hugs, monsters, an itchy toe. The ticket system flopped; silent returns and an earlier bedtime fixed it."
 tags = ['bedtime', 'toddlers', 'sleep']
-draft = true
+draft = false
 +++
 
 For three weeks straight, bedtime ended the same way. Lights out at 8:00, and by 8:07 there were small bare feet padding down the hallway toward the living room.

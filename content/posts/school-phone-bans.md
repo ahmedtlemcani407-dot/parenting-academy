@@ -3,7 +3,7 @@ title = 'School Phone Bans Cut Screen Time 15% — and Changed Nothing'
 date = 2026-10-07T09:30:00+01:00
 description = 'Kids used their phones 15% less at school after the bans — but their total screen time did not budge. The minutes just moved to social media. Here is what that tells me about my own house.'
 tags = ['screen time', 'kids', 'schools']
-draft = true
+draft = false
 +++
 
 My kids are not school age yet, so school phone bans are not my problem. Or so I thought, until I read the numbers this week and realized they might explain a lot about why my own screen time rules keep working and then quietly not working.
