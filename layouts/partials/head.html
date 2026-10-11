@@ -15,7 +15,7 @@
 <link rel="canonical" href="{{ .Permalink }}">
 {{- /* Favicons */ -}}
 <link rel="icon" href="{{ "favicon.ico" | relURL }}" sizes="any">
-<link rel="icon" type="image/svg+xml" href="{{ "images/logo.svg" | absURL }}">
+<link rel="icon" type="image/png" href="{{ "images/logo.png" | absURL }}">
 <link rel="icon" type="image/png" sizes="32x32" href="{{ "favicon-32x32.png" | absURL }}">
 <link rel="icon" type="image/png" sizes="16x16" href="{{ "favicon-16x16.png" | absURL }}">
 <link rel="apple-touch-icon" href="{{ "apple-touch-icon.png" | absURL }}">
@@ -53,7 +53,7 @@
     "@type": "Organization",
     "name": "Parenting Academy",
     "url": {{ site.Home.Permalink | jsonify }},
-    "logo": {{ "images/logo.svg" | absURL | jsonify }}
+    "logo": {{ "images/logo.png" | absURL | jsonify }}
   }
 }
 </script>
@@ -64,7 +64,7 @@
   "name": "Parenting Academy",
   "url": {{ site.Home.Permalink | jsonify }},
   "description": {{ site.Params.description | plainify | jsonify }},
-  "logo": {{ "images/logo.svg" | absURL | jsonify }}
+  "logo": {{ "images/logo.png" | absURL | jsonify }}
 }
 </script>
 {{- else if .IsPage }}
@@ -90,7 +90,7 @@
     "@type": "Organization",
     "name": "Parenting Academy",
     "url": {{ site.Home.Permalink | jsonify }},
-    "logo": {{ "images/logo.svg" | absURL | jsonify }}
+    "logo": {{ "images/logo.png" | absURL | jsonify }}
   }
 }
 </script>
