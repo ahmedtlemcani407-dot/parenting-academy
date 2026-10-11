@@ -33,6 +33,9 @@
   }
   .brand { font-family: var(--serif); font-weight: 700; font-size: 1.15rem; text-decoration: none; display: inline-flex; align-items: center; gap: 10px; }
   .brand img { width: 34px; height: 34px; border-radius: 50%; object-fit: cover; }
+  .brand .logo-dark { display: none; }
+  [data-theme="dark"] .brand .logo-light { display: none; }
+  [data-theme="dark"] .brand .logo-dark { display: inline-block; }
   nav { display: flex; gap: 22px; font-size: 0.95rem; align-items: center; }
   nav a { text-decoration: none; color: var(--muted); }
   nav a:hover { color: var(--ink); text-decoration: underline; text-underline-offset: 4px; }

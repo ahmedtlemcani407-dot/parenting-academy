@@ -11,7 +11,7 @@
 
 <header>
   <div class="wrap">
-    <a class="brand" href="{{ "/" | relURL }}"><img src="{{ "images/logo.png" | relURL }}" alt="{{ site.Title }} logo" width="34" height="34">{{ site.Title }}</a>
+    <a class="brand" href="{{ "/" | relURL }}"><img class="logo-light" src="{{ "images/logo.png" | relURL }}" alt="{{ site.Title }} logo" width="34" height="34"><img class="logo-dark" src="{{ "images/logo-dark.png" | relURL }}" alt="{{ site.Title }} logo" width="34" height="34">{{ site.Title }}</a>
     <nav aria-label="Main">
       {{- range site.Menus.main }}
       <a href="{{ .URL | relURL }}">{{ .Name }}</a>
