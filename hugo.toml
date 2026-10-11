@@ -16,6 +16,10 @@ tag = 'tags'
 [params]
 description = 'Practical parenting advice from a real parent — bedtime, screen time, picky eaters, discipline, and all the everyday stuff nobody warns you about.'
 author = 'Parenting Academy'
+# Brevo newsletter: paste your Brevo embedded subscription form's action URL here
+# to enable the per-article PDF email gate and the footer signup box.
+# Leave empty ("") and both stay hidden.
+brevo_form_action = ""
 # Used in meta keywords (keep short)
 keywords = ['parenting', 'parenting advice', 'toddlers', 'kids', 'family']
 

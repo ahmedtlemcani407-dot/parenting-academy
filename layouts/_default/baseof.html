@@ -36,6 +36,15 @@
       <a href="{{ .URL | relURL }}">{{ .Name }}</a>
       {{- end }}
     </nav>
+    {{ if site.Params.brevo_form_action }}
+    <div class="newsletter-box">
+      <p><strong>The weekly letter.</strong> New articles, once a week. No spam, unsubscribe anytime.</p>
+      <form action="{{ site.Params.brevo_form_action }}" method="post">
+        <input type="email" name="EMAIL" required placeholder="you@example.com" aria-label="Email address" autocomplete="email">
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+    {{ end }}
   </div>
 </footer>
 

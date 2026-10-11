@@ -1,0 +1,35 @@
+{{ define "main" }}
+<article class="wrap" style="text-align:center; padding: 64px 0;">
+  <h1>You're in! 🎉</h1>
+  <p style="color: var(--muted); max-width: 480px; margin: 0 auto 24px; line-height: 1.7;">
+    Thanks for subscribing — please confirm via the email I just sent you
+    (double opt-in keeps the list clean). Your PDF is ready below either way.
+  </p>
+  <p id="pdf-dl-wrap" style="display:none;">
+    <a id="pdf-dl" class="btn-print" href="#" download style="text-decoration:none; display:inline-block;">Download your PDF</a>
+  </p>
+  <p><a href="{{ "/" | relURL }}">← Back to Parenting Academy</a></p>
+</article>
+<script>
+/* Link the requested article's PDF: ?article=<slug> wins, else the slug the
+   signup form saved before redirecting here. Slug is validated strictly. */
+(function(){
+  var slug = null;
+  try {
+    var q = new URLSearchParams(window.location.search).get('article');
+    if (q && /^[a-z0-9-]+$/.test(q)) slug = q;
+  } catch (e) {}
+  if (!slug) {
+    try {
+      var s = localStorage.getItem('pa-pdf-article');
+      if (s && /^[a-z0-9-]+$/.test(s)) slug = s;
+    } catch (e) {}
+  }
+  if (slug) {
+    var a = document.getElementById('pdf-dl');
+    a.href = '/pdfs/' + slug + '.pdf';
+    document.getElementById('pdf-dl-wrap').style.display = 'block';
+  }
+})();
+</script>
+{{ end }}

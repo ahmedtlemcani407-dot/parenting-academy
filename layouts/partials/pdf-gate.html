@@ -1,0 +1,20 @@
+{{/* Email-gated per-article PDF download. Renders nothing until
+  site.Params.brevo_form_action is set (Brevo embedded form action URL). */}}
+{{ if site.Params.brevo_form_action }}
+{{ $slug := path.Base (strings.TrimSuffix "/" .RelPermalink) }}
+<aside class="pdf-gate" aria-label="Get this article as a PDF">
+  <h2>Keep this one</h2>
+  <p>Want this article as a printable PDF? Drop your email and I&rsquo;ll send it over.</p>
+  <form class="pdf-gate-form" action="{{ site.Params.brevo_form_action }}" method="post" data-pdf-gate>
+    <input type="hidden" name="article" value="{{ $slug }}">
+    <input type="hidden" name="article_title" value="{{ .Title }}">
+    <input type="email" name="EMAIL" required placeholder="you@example.com" aria-label="Email address" autocomplete="email">
+    <button type="submit">Send me the PDF</button>
+  </form>
+  <p class="pdf-gate-note">No spam, ever. Unsubscribe anytime.</p>
+</aside>
+<script>
+/* Remember which article's PDF was requested so /pdf-thanks/ can link it. */
+(function(){var f=document.querySelector('[data-pdf-gate]');if(!f)return;f.addEventListener('submit',function(){try{localStorage.setItem('pa-pdf-article',f.querySelector('input[name=article]').value);}catch(e){}});})();
+</script>
+{{ end }}
