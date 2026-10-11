@@ -8,6 +8,9 @@
   <form class="pdf-gate-form" action="{{ site.Params.brevo_form_action }}" method="post" data-pdf-gate>
     <input type="hidden" name="article" value="{{ $slug }}">
     <input type="hidden" name="article_title" value="{{ .Title }}">
+    <input type="hidden" name="email_address_check" value="">
+    <input type="hidden" name="locale" value="en">
+    <input type="hidden" name="html_type" value="simple">
     <input type="email" name="EMAIL" required placeholder="you@example.com" aria-label="Email address" autocomplete="email">
     <button type="submit">Send me the PDF</button>
   </form>
