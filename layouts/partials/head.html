@@ -93,7 +93,37 @@
     "name": "Parenting Academy",
     "url": {{ site.Home.Permalink | jsonify }},
     "logo": {{ "images/logo.png" | absURL | jsonify }}
+  },
+  "speakable": {
+    "@type": "SpeakableSpecification",
+    "cssSelector": [".article-head h1", ".article-body"]
   }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": {{ site.Home.Permalink | jsonify }}
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Articles",
+      "item": {{ (site.GetPage "posts").Permalink | jsonify }}
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": {{ .Title | jsonify }},
+      "item": {{ .Permalink | jsonify }}
+    }
+  ]
 }
 </script>
 {{- end }}

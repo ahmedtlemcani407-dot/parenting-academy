@@ -1,4 +1,17 @@
 User-agent: *
 Allow: /
 
+# AI assistants and search crawlers are welcome. A machine-readable
+# summary of this site's content lives at /llms.txt
+User-agent: GPTBot
+Allow: /
+User-agent: ChatGPT-User
+Allow: /
+User-agent: ClaudeBot
+Allow: /
+User-agent: PerplexityBot
+Allow: /
+User-agent: Google-Extended
+Allow: /
+
 Sitemap: {{ "sitemap.xml" | absURL }}
