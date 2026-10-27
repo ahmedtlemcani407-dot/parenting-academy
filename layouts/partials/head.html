@@ -2,17 +2,31 @@
 {{- $title := site.Title -}}
 {{- if .IsHome -}}
   {{- $title = printf "%s — Practical parenting advice from a real parent" site.Title -}}
+{{- else if .Params.seo_title -}}
+  {{- $title = .Params.seo_title -}}
+{{- else if and .IsSection (eq .Section "posts") -}}
+  {{- $title = printf "All Articles | %s" site.Title -}}
 {{- else -}}
   {{- $title = printf "%s | %s" .Title site.Title -}}
 {{- end -}}
 {{- $desc := .Description | default (.Summary | plainify) | default site.Params.description | plainify -}}
 {{- $ogimg := "images/og-card.png" | absURL -}}
+{{- if and .IsPage (eq .Section "posts") -}}
+  {{- with .File -}}
+    {{- $jpg := printf "images/thumbs/%s.jpg" .ContentBaseName -}}
+    {{- if fileExists (printf "static/%s" $jpg) -}}
+      {{- $ogimg = $jpg | absURL -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{{ $title }}</title>
 <meta name="description" content="{{ $desc }}">
-{{- with site.Params.keywords }}<meta name="keywords" content="{{ delimit . ", " }}">{{ end }}
 <link rel="canonical" href="{{ .Permalink }}">
+{{- if or (eq .Kind "taxonomy") (eq .Kind "term") (eq .RelPermalink "/pdf-thanks/") }}
+<meta name="robots" content="noindex">
+{{- end }}
 {{- /* Favicons */ -}}
 <link rel="icon" href="{{ "favicon.ico" | relURL }}" sizes="any">
 <link rel="icon" type="image/png" href="{{ "images/logo.png" | absURL }}">
@@ -69,7 +83,7 @@
   "logo": {{ "images/logo.png" | absURL | jsonify | safeJS }}
 }
 </script>
-{{- else if .IsPage }}
+{{- else if and .IsPage (eq .Section "posts") }}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -84,9 +98,9 @@
   },
   "image": {{ $ogimg | jsonify | safeJS }},
   "author": {
-    "@type": "Organization",
+    "@type": "Person",
     "name": "Parenting Academy",
-    "url": {{ site.Home.Permalink | jsonify | safeJS }}
+    "url": {{ "/about/" | absURL | jsonify | safeJS }}
   },
   "publisher": {
     "@type": "Organization",
@@ -124,6 +138,52 @@
       "item": {{ .Permalink | jsonify | safeJS }}
     }
   ]
+}
+</script>
+{{- else if .IsPage }}
+{{- $pagetype := "WebPage" -}}
+{{- if eq .RelPermalink "/about/" -}}
+  {{- $pagetype = "AboutPage" -}}
+{{- else if eq .RelPermalink "/contact/" -}}
+  {{- $pagetype = "ContactPage" -}}
+{{- end -}}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": {{ $pagetype | jsonify | safeJS }},
+  "name": {{ .Title | jsonify | safeJS }},
+  "description": {{ $desc | jsonify | safeJS }},
+  "url": {{ .Permalink | jsonify | safeJS }}
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": {{ site.Home.Permalink | jsonify | safeJS }}
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": {{ .Title | jsonify | safeJS }},
+      "item": {{ .Permalink | jsonify | safeJS }}
+    }
+  ]
+}
+</script>
+{{- else if .IsSection }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": {{ .Title | jsonify | safeJS }},
+  "description": {{ $desc | jsonify | safeJS }},
+  "url": {{ .Permalink | jsonify | safeJS }}
 }
 </script>
 {{- end }}

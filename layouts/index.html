@@ -13,6 +13,7 @@
 {{ with $lead }}
 <section class="lead-story" id="featured">
   <div class="wrap">
+    <h1 class="home-heading">Practical parenting advice from a real parent</h1>
     <div class="lead-grid">
       <div class="lead-img-box">
         <a href="{{ .RelPermalink }}" aria-label="{{ .Title }}">{{ partial "post-thumb.html" . }}</a>
@@ -23,7 +24,7 @@
           <span>{{ .ReadingTime }} min read</span><span aria-hidden="true">·</span>
           <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time>
         </div>
-        <h1 class="lead-title">{{ .Title }}</h1>
+        <h2 class="lead-title">{{ .Title }}</h2>
         {{ with .Description }}<p class="lead-excerpt">{{ . }}</p>{{ end }}
         <a class="btn-read" href="{{ .RelPermalink }}">Read the story →</a>
       </div>

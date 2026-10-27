@@ -1,12 +1,47 @@
-{{- /* Related posts after the post body (posts section only). */ -}}
-{{- $tags := .Params.tags | default slice -}}
-{{- $related := slice -}}
-{{- range where (where site.RegularPages "Section" "posts") "Permalink" "!=" .Permalink -}}
-  {{- if gt (len (intersect $tags (.Params.tags | default slice))) 0 -}}
-    {{- $related = $related | append . -}}
+{{- /* Related posts after the post body (posts section only).
+     Ranked by number of shared tags (excluding the generic "toddlers" tag).
+     One slot is always a deterministic rotation link (11 ahead in date order,
+     an offset coprime to the post count), which guarantees every post is
+     linked from at least one related block; remaining slots fall back to
+     the most recent posts. */ -}}
+{{- $page := . -}}
+{{- $tags := symdiff ($page.Params.tags | default slice) (slice "toddlers") -}}
+{{- $posts := where site.RegularPages "Section" "posts" -}}
+{{- $scored := slice -}}
+{{- range where $posts "Permalink" "!=" $page.Permalink -}}
+  {{- $shared := intersect $tags (.Params.tags | default slice) -}}
+  {{- if gt (len $shared) 0 -}}
+    {{- $scored = $scored | append (dict "page" . "score" (len $shared)) -}}
   {{- end -}}
 {{- end -}}
-{{- $related = first 3 $related -}}
+{{- $related := slice -}}
+{{- range first 2 (sort $scored "score" "desc") -}}
+  {{- $related = $related | append .page -}}
+{{- end -}}
+{{- $ordered := $posts.ByDate -}}
+{{- $idx := 0 -}}
+{{- range $i, $p := $ordered -}}
+  {{- if eq $p.Permalink $page.Permalink -}}
+    {{- $idx = $i -}}
+  {{- end -}}
+{{- end -}}
+{{- $rot := index $ordered (mod (add $idx 11) (len $ordered)) -}}
+{{- $chosen := slice -}}
+{{- range $related -}}
+  {{- $chosen = $chosen | append .Permalink -}}
+{{- end -}}
+{{- if and (ne $rot.Permalink $page.Permalink) (not (in $chosen $rot.Permalink)) -}}
+  {{- $related = $related | append $rot -}}
+  {{- $chosen = $chosen | append $rot.Permalink -}}
+{{- end -}}
+{{- if lt (len $related) 3 -}}
+  {{- range $posts.ByDate.Reverse -}}
+    {{- if and (lt (len $related) 3) (ne .Permalink $page.Permalink) (not (in $chosen .Permalink)) -}}
+      {{- $related = $related | append . -}}
+      {{- $chosen = $chosen | append .Permalink -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
 {{- if $related }}
 <section class="related" aria-label="Related posts">
   <h2>Keep reading</h2>

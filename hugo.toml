@@ -20,8 +20,6 @@ author = 'Parenting Academy'
 # to enable the per-article PDF email gate and the footer signup box.
 # Leave empty ("") and both stay hidden.
 brevo_form_action = "https://72d4c668.sibforms.com/serve/MUIFAN8WUlXEaGAaG3GNiiOtoIrOrbT44c_O2NaKbekt_avu6kCUO8n3Bc4ySOrNOT_uQ15-dJEs4IF2XpMFqJG1FQNgd7GeVn8s_DuHm2kqO482mJPRge9DZkNscA_2Qho1wdvDpWlB8HSaZS2eX52pwDqB57WjbRPW7mg1vWwjaS9G5g9lfNhhsKLZcb5q71GOcitgWs53r0gnDA=="
-# Used in meta keywords (keep short)
-keywords = ['parenting', 'parenting advice', 'toddlers', 'kids', 'family']
 
 [menu]
 [[menu.main]]
