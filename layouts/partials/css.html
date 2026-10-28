@@ -251,4 +251,69 @@
     h1, h2, h3 { break-after: avoid; }
     p, li { orphans: 3; widows: 3; }
   }
+  /* Premium homepage (from user-supplied index_premium.html, Oct 28) — scoped so the site header, footer, and article theme are untouched */
+  .premium-home { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; line-height: 1.7; color: #2c3e50; background: #f9f9f9; font-size: 16px; }
+  .premium-home a { color: inherit; text-decoration: none; }
+  .ph-hero { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: #fff; padding: 5rem 2rem; text-align: center; position: relative; overflow: hidden; }
+  .ph-hero::before { content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: url('data:image/svg+xml,<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="2" fill="white" opacity="0.1"/></svg>'); opacity: 0.3; }
+  .ph-hero-content { position: relative; z-index: 1; max-width: 800px; margin: 0 auto; }
+  .ph-hero-badge { display: inline-block; background: rgba(255,255,255,0.2); padding: 0.5rem 1.2rem; border-radius: 50px; font-size: 0.9rem; margin-bottom: 1rem; backdrop-filter: blur(10px); }
+  .ph-hero h1 { font-family: inherit; font-size: 3rem; margin: 0 0 1.5rem; font-weight: 800; line-height: 1.2; letter-spacing: normal; text-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+  .ph-hero p { font-size: 1.3rem; opacity: 0.95; line-height: 1.6; margin: 0; color: #fff; }
+  .ph-wrap { max-width: 1200px; margin: 0 auto; padding: 4rem 2rem; }
+  .ph-featured { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 12px; overflow: hidden; box-shadow: 0 8px 24px rgba(0,0,0,0.15); margin-bottom: 4rem; color: #fff; position: relative; }
+  .ph-featured-content { padding: 3rem; position: relative; z-index: 1; }
+  .ph-featured-badge { display: inline-block; background: rgba(255,255,255,0.2); padding: 0.4rem 1rem; border-radius: 50px; font-size: 0.85rem; margin-bottom: 1rem; font-weight: 600; }
+  .ph-featured-content h2 { font-family: inherit; font-size: 2.5rem; margin: 0 0 1.2rem; font-weight: 800; line-height: 1.3; }
+  .ph-featured-content p { font-size: 1.2rem; margin: 0 0 2rem; opacity: 0.95; line-height: 1.7; }
+  .ph-btn { display: inline-block; background: #fff; color: #667eea; padding: 1rem 2rem; border-radius: 8px; font-weight: 700; box-shadow: 0 4px 15px rgba(0,0,0,0.2); transition: all 0.3s ease; }
+  .ph-btn:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0,0,0,0.3); }
+  .ph-section-title { font-family: inherit; font-size: 2.2rem; margin: 0 0 3rem; color: #2c3e50; text-align: center; font-weight: 800; position: relative; padding-bottom: 1rem; }
+  .ph-section-title::after { content: ''; position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); width: 80px; height: 4px; background: linear-gradient(90deg, #667eea, #764ba2); border-radius: 2px; }
+  .ph-posts-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 2.5rem; margin-bottom: 4rem; }
+  .ph-post-card { background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.08); transition: all 0.3s ease; border: 1px solid transparent; }
+  .ph-post-card:hover { transform: translateY(-8px); box-shadow: 0 8px 24px rgba(0,0,0,0.15); border-color: #667eea; }
+  .ph-post-card > a { display: block; }
+  .ph-post-image { width: 100%; height: 200px; overflow: hidden; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
+  .ph-post-image img.thumb { width: 100%; height: 100%; object-fit: cover; border-radius: 0; flex: none; }
+  .ph-post-content { padding: 2rem; }
+  .ph-post-meta { display: flex; align-items: center; gap: 1rem; color: #999; font-size: 0.85rem; margin-bottom: 1rem; }
+  .ph-post-category { background: #f0f0f0; padding: 0.3rem 0.8rem; border-radius: 20px; font-weight: 600; color: #667eea; }
+  .ph-post-title { font-family: inherit; font-size: 1.4rem; margin: 0 0 1rem; color: #2c3e50; font-weight: 700; line-height: 1.4; }
+  .ph-post-excerpt { color: #666; font-size: 1rem; line-height: 1.6; margin: 0; }
+  .ph-about { background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); border-radius: 12px; padding: 4rem; margin-bottom: 4rem; text-align: center; position: relative; overflow: hidden; }
+  .ph-about::before { content: '💙'; position: absolute; top: -20px; right: -20px; font-size: 10rem; opacity: 0.1; }
+  .ph-about h2 { font-family: inherit; font-size: 2rem; margin: 0 0 1.5rem; color: #2c3e50; font-weight: 800; }
+  .ph-about p { color: #666; margin: 0 auto 1rem; font-size: 1.15rem; max-width: 700px; line-height: 1.8; }
+  .ph-credo-items { display: flex; justify-content: center; gap: 28px; margin: 1.5rem 0 2rem; font-style: italic; color: #5568d3; font-size: 0.95rem; flex-wrap: wrap; }
+  .premium-home .toolkit-box { margin-bottom: 0; }
+  .premium-home .toolkit-box-head h2 { font-family: inherit; }
+  .premium-home .toolkit-kicker { color: #667eea; }
+  .premium-home .toolkit-box-head p a { color: #667eea; }
+  .premium-home .btn-print { background: #667eea; }
+  .premium-home .chart-item:hover { border-color: #667eea; }
+  .premium-home .chart-item.checked { background: #eef0fe; border-color: #667eea; }
+  [data-theme="dark"] .premium-home { background: #0e1512; color: #eef4ef; }
+  [data-theme="dark"] .ph-post-card { background: #16241c; border-color: #22332a; }
+  [data-theme="dark"] .ph-post-title, [data-theme="dark"] .ph-section-title { color: #eef4ef; }
+  [data-theme="dark"] .ph-post-excerpt { color: #a3b8ac; }
+  [data-theme="dark"] .ph-post-category { background: #22332a; color: #8ea2ff; }
+  [data-theme="dark"] .ph-post-meta { color: #a3b8ac; }
+  [data-theme="dark"] .ph-about { background: linear-gradient(135deg, #16241c 0%, #1d2a33 100%); }
+  [data-theme="dark"] .ph-about h2 { color: #eef4ef; }
+  [data-theme="dark"] .ph-about p { color: #a3b8ac; }
+  [data-theme="dark"] .premium-home .toolkit-box { background: #16241c; }
+  [data-theme="dark"] .premium-home .chart-item { background: #0e1512; }
+  [data-theme="dark"] .premium-home .chart-item.checked { background: #14291d; }
+  @media (max-width: 768px) {
+    .ph-hero h1 { font-size: 2rem; }
+    .ph-hero p { font-size: 1.1rem; }
+    .ph-posts-grid { grid-template-columns: 1fr; }
+    .ph-featured-content { padding: 2rem; }
+    .ph-featured-content h2 { font-size: 1.8rem; }
+    .ph-about { padding: 2rem; }
+  }
+  @media print {
+    .premium-home .ph-hero, .premium-home .ph-featured, .premium-home .ph-posts-grid, .premium-home .ph-section-title, .premium-home .ph-about { display: none !important; }
+  }
 </style>
